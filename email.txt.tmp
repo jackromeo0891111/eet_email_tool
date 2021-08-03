@@ -1,11 +1,11 @@
 ### Report Time ###
-2021-08-03 11:26:09
+2021-08-03 15:17:26
 
 ### Jira Filter ###
 project =ER AND status = Resolved AND (labels is Empty OR labels not in ("not-applicable-to-ML", "already-in-ML")) AND fixVersion was not "KSP/workaround only" AND component != "Unleashed AP" AND updated >= -6w ORDER BY priority ASC
 
 ### Info ###
-There are 179 ERs to parse
+There are 180 ERs to parse
 Target Release: SCG Mainline(//depot)
 
 ### Missing ER/s by Products ###
@@ -73,7 +73,6 @@ ER-8577(Kevin Chiou): Comcast : 5.1.1.0.598 : Discrepancy in total traffic in th
 ER-9977(Yun Luo): Alcadis / VodafoneZiggo SZ300 3.6.2.0.250 Corrupted "download all logs" if total logs more then 2GB.
 ER-10437(Boris Yan): Alcadis / VodafoneZiggo vSZ-H 5.2.2.0.317 Elliptic Curve certificate breaks management webgui.
 ER-9318(John Lin): Js communicaitons Unleashed 200.9 In AP Summary configuration page, 5G channel 132 and 136 need to be hidden in case channelization is auto or 80MHz
-ER-10276(Charlie Liu): MoE_NZ vSZ 5.2.2 "shared secret of non-proxy accounting server not updated in AP configuration" 
 ER-9813(Yun Luo): [SZ 5.2.1] Channel 144 is not available on SmartZone with Japan country code.
 ER-10246(Boris Yan): [EDUCATION NETWORKS OF AMERICA] : vSZ-H - 5.2.2 : API retrieved Block client list has the "hasMore=false" and incorrect "totalCount" on all pages
 ER-10272(Boris Yan): KDDI - SZ-100 - 5.2.1.0 515 : Services except Cassandra were down after restoring cluster backup
@@ -84,6 +83,7 @@ ER-9545(Charlie Liu): CityOfMesa: 5.2.1 with AP firmware 1038 - Clients on T750 
 ER-9621(Charlie Liu): Alcadis / Telenet SZ100-D 5.2.1.0.515 SFTP export fails
 ER-9925(Sagar Jayaram): [Church of the Highlands]- SZ-104-5.2.2.0.317- Multiple "Auth server not reachable" along with "unable to reach radius server [127.0.0.1] alert"s
 ER-10142(Yun Luo): Dish_Fiber : 5.2.1.0.515 AP connection status discrepancy between snmp and cassandra
+ER-10276(Charlie Liu): MoE_NZ vSZ 5.2.2 "shared secret of non-proxy accounting server not updated in AP configuration" 
 
 ### Partial Integrated ER/s (integration is not 100% matched, switch to debug view to see the details) ###
 No entry
@@ -106,6 +106,7 @@ ER-9597(Charlie Liu): Alcadis / Ziggo SZ300 5.2.0.0.699 specific static route no
 ER-9658(Tim Chen): Reliance // vSZ-H // 5.2.1 build 515 : Allow duplicate IP addresses in S-GRE profiles
 ER-10427(Vasantha Kumara K L): KDDI - SZ-124 - 3.4.2.0 507 : SZ send burst packets of DDoS attack to another customer
 ER-10452(Yun Luo): Cablecom/Glide vSZ-H 6.0.0.0.1331 configuration backup failed, manual and scheduled.
+ER-10231(Paul Guo): Oi - Brazil - SZ300 - 5.1.2 - Upgrade failed, cluster bkp restore failed on one node
 
 ### Excluded ER/s (no fix or no change list) ###
 ER-10149(Cannot Reproduce, Kevin Chiou): Dish Fiber : VSZH 5.2.1.0.1069 unbound group DPSK EAPOL-Key 2 handshake timeout between UE and AP
@@ -202,9 +203,9 @@ ER-10459(Done, Tim Chen): Boingo: SW Version: 5.0.0 Logmgr process keeps on cras
 ER-10492(Done, Eric TH Wu): Vida Healthcare UK | ALTO Cloud 21.04 EU- Social Media Login: Facebook, Twitter and Linkedin not working
 ER-10505(Done, Sagar Jayaram): [Ruckus Employee Account] vSZ-E 5.2.1 : Core and subscribermanagement service down 
 ER-10125(Cannot Reproduce, Kuldeep Kumar): [PROFESSIONAL COMPUTER SERVICES] vSZ-E 5.2.2.0317 | R650 and R850 APs reboot due to Kernel Panic
-ER-10516(Duplicate, Charlie Liu): Hotwire: R550 unable to establish SSH tunnel to VSZ using 114.0.O standalone image
 ER-10460(Done, Eric TH Wu): [Carefree_of_Colorado] ALTO 21.04 - Admin already invited to different account
 ER-9139(Done, Kevin Chiou): [Bestel (Mexico Red)] SZ300: 5.1.2 - T811 Cablemodem info is not showing up on SZ controller
+ER-10516(Duplicate, Charlie Liu): Hotwire: R550 unable to establish SSH tunnel to VSZ using 114.0.O standalone image
 
 ### Ignored ER/s (invalid change list) ###
 No entry
